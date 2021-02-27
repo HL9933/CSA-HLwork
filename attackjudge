@@ -1,0 +1,75 @@
+interface AttackJudge {
+    static final double bloodGrid = 25.0;
+    String[] skill_player = {"A", "B", "C", "D", "E","F"};
+    String[] skill_monster = {"G", "H", "I", "J", "K","L"};
+    String[] equip_monster = {"M", "N", "O", "P", "Q"};
+    class skill1_player{
+        static String name = skill_player[0];
+        static int attack = 20;
+    }
+    class skill2_player{
+        static String name = skill_player[1];
+        static int attack = 30;
+    }
+    class skill3_player{
+        static String name = skill_player[2];
+        static int attack = 50;
+    }
+    class skill4_player{
+        static String name = skill_player[3];
+        static int attack = 80;
+    }
+    class skill5_player{
+        static String name = skill_player[4];
+        static int attack = 100;
+    }
+    class skill1_monster{
+        static String name = skill_monster[0];
+        static int attack = 20;
+    }
+    class skill2_monster{
+        static String name = skill_monster[1];
+        static int attack = 30;
+    }
+    class skill3_monster{
+        static String name = skill_monster[2];
+        static int attack = 50;
+    }
+    class skill4_monster{
+        static String name = skill_monster[3];
+        static int attack = 80;
+    }
+    class skill5_monster{
+        static String name = skill_monster[4];
+        static int attack = 100;
+    }
+    class equip1{
+        static String name = "M";
+        static int attack = 20;
+        static int define = 10;
+    }
+    class equip2{
+        static String name = "N";
+        static int attack = 30;
+        static int define = 15;
+    }
+    class equip3{
+        static String name = "O";
+        static int attack = 30;
+        static int define = 40;
+    }
+    class equip4{
+        static String name = "P";
+        static int attack = 50;
+        static int define = 40;
+    }
+    class equip5{
+        static String name = "Q";
+        static int attack = 60;
+        static int define = 30;
+    }
+
+    void attack(Player p, Monster m);
+
+    void show();
+}
